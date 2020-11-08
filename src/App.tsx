@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from 'react';
+import CenterLoader from './components/Loader/CenterLoading';
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+import Basic from "./layout/Basic";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <Suspense fallback={<CenterLoader />}>
+            <BrowserRouter>
+                <ScrollToTop />
+                <Switch>
+                    <Route path="/" component={Basic} />
+                </Switch>
+            </BrowserRouter>
+        </Suspense>
+    );
+};
 
 export default App;
