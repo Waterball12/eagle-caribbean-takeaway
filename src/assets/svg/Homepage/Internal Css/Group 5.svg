@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="147.887" height="49.5" viewBox="0 0 147.887 49.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(107,219,32,0.77);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 25px;
+        font-family: SegoeUI-Semibold, Segoe UI;
+        font-weight: 600;
+        letter-spacing: 0.076em;
+      }
+    </style>
+  </defs>
+  <g id="Group_5" data-name="Group 5" transform="translate(-1136 -789.5)">
+    <path id="Path_17" data-name="Path 17" class="cls-1" d="M2.844,0h142.2c1.571,0,2.844,1.63,2.844,3.64V45.86c0,2.01-1.273,3.64-2.844,3.64H2.844C1.273,49.5,0,47.87,0,45.86V3.64C0,1.63,1.273,0,2.844,0Z" transform="translate(1136 789.5)"/>
+    <text id="Find_us" data-name="Find us" class="cls-2" transform="translate(1164 825)"><tspan x="0" y="0">Find us</tspan></text>
+  </g>
+</svg>

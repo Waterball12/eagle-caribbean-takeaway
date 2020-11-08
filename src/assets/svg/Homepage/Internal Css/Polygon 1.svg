@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6cdc21;
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <path id="Polygon_1" data-name="Polygon 1" class="cls-1" d="M13.5,0l3.375,9.669L27,9.931l-8.039,6.238L21.843,26,13.5,20.186,5.157,26l2.883-9.831L0,9.931l10.125-.262Z"/>
+</svg>

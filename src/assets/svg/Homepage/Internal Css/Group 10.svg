@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="287.13" height="76.087" viewBox="0 0 287.13 76.087">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #6bdb20;
+        font-size: 25px;
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+        letter-spacing: 0.076em;
+      }
+    </style>
+  </defs>
+  <g id="Group_10" data-name="Group 10" transform="translate(-1136 -789.5)">
+    <path id="Path_17" data-name="Path 17" class="cls-1" d="M5.522,0H281.608a5.559,5.559,0,0,1,5.522,5.595v64.9a5.559,5.559,0,0,1-5.522,5.595H5.522A5.559,5.559,0,0,1,0,70.492V5.595A5.559,5.559,0,0,1,5.522,0Z" transform="translate(1136 789.5)"/>
+    <text id="Our_Menu" data-name="Our Menu" class="cls-2" transform="translate(1205 838)"><tspan x="0" y="0">OUR MENU</tspan></text>
+  </g>
+</svg>
