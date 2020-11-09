@@ -35,11 +35,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export interface HeaderProps {
-
-}
-
-const Header = (props: HeaderProps) => {
+const Header = () => {
     const classes = useStyles();
 
     return (

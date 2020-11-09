@@ -1,7 +1,6 @@
 import React from 'react';
 import routes from "../routes";
 import {Route, Switch} from 'react-router-dom';
-import {CssBaseline} from "@material-ui/core";
 import Header from "../components/Header";
 import Error404 from "../views/Error";
 

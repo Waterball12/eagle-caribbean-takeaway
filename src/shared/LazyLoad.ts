@@ -2,7 +2,7 @@ export const retry: any = (fn: () => Promise<void>, retriesLeft = 5, interval = 
     return new Promise((resolve, reject) => {
         fn()
             .then(resolve)
-            .catch((error) => {
+            .catch(() => {
                 setTimeout(() => {
                     if (retriesLeft === 1) {
                         // reject('maximum retries exceeded');

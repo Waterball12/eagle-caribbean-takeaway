@@ -12,7 +12,7 @@ import FindUseImage from "../assets/svg/About/Presentation attributes/Group 52.s
 import GoogleMapsPlaceholder from "../assets/svg/About/Presentation attributes/Image 1.svg";
 import Footer from "../components/Footer";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
     elm: {
         "backgroundRepeat": "no-repeat",
         "position": "absolute",
