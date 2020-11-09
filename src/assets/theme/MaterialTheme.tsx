@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {createMuiTheme, ThemeProvider} from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import {cyan} from "@material-ui/core/colors";
 
 export interface DarkProps {
     isDark: boolean;
@@ -15,6 +14,7 @@ const DarkModeContext = React.createContext<DarkPropsType>({
     setTheme: undefined
 });
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function useDarkContext<DarkProps>() {
     const editor = React.useContext<DarkPropsType>(DarkModeContext);
 
