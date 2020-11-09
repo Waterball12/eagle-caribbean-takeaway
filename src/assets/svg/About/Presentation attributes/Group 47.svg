@@ -52,11 +52,5 @@
     <g transform="matrix(1, 0, 0, 1, 355.3, -310.75)" filter="url(#Path_255)">
       <path id="Path_255-2" data-name="Path 255" d="M25.144,82.718C-2.654,67.344-2.067,22.7,14.055,3.4S64.318-15.168,97.809-8.1s60.474,47.165,34.763,82.015S52.942,98.093,25.144,82.718Z" transform="matrix(0.99, -0.1, 0.1, 0.99, 101.7, 377.98)" fill="#a5f14e"/>
     </g>
-    <g id="Group_1" data-name="Group 1" transform="translate(-62 8)">
-      <text id="About" transform="translate(929 55)" fill="#fff" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">About</tspan></text>
-      <text id="Home" transform="translate(812 28)" fill="#fff" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="27">Home</tspan></text>
-      <text id="Menu" transform="translate(1045 55)" fill="#fff" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Menu</tspan></text>
-      <text id="Gallery" transform="translate(1157 55)" fill="#fff" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Gallery</tspan></text>
-    </g>
   </g>
 </svg>
