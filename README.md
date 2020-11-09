@@ -1,4 +1,12 @@
-Eagle carribbean takeaway
+## Introduction
+
+Eagle Caribbean takeaway website available at https://eagle-takeaway.netlify.app
+
+### Current issues
+
+- Heavy images #1
+- Images missing or incomplete
+- TO FINISH
 
 ## Available Scripts
 
