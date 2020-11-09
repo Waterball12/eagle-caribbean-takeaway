@@ -9,6 +9,7 @@ import {Link} from "react-router-dom";
 import IconButton from '@material-ui/core/IconButton';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import {AboutLink, HomeLink, MenuLink} from "../../shared/Links";
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
@@ -53,13 +54,13 @@ const Header = (props: HeaderProps) => {
                         </Hidden>
                     </div>
                     <div>
-                        <Button className={classes.navigationButton} color="inherit">
+                        <Button className={classes.navigationButton} color="inherit" component={HomeLink}>
                             Home
                         </Button>
-                        <Button className={classes.navigationButton} color="inherit">
+                        <Button className={classes.navigationButton} color="inherit" component={AboutLink}>
                             About
                         </Button>
-                        <Button className={classes.navigationButton} color="inherit">
+                        <Button className={classes.navigationButton} color="inherit" component={MenuLink}>
                             Menu
                         </Button>
                         <Button className={classes.navigationButton} color="inherit">
