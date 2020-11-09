@@ -4,7 +4,7 @@ Eagle Caribbean takeaway website available at https://eagle-takeaway.netlify.app
 
 ### Current issues
 
-- Heavy images #1
+- Heavy images [#1](/../../issues/1)
 - Images missing or incomplete
 - TO FINISH
 
