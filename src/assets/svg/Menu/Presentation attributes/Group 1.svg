@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="421" height="33" viewBox="0 0 421 33">
-  <g id="Group_1" data-name="Group 1" transform="translate(-812 -28)">
-    <text id="About" transform="translate(929 55)" fill="#fff" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">About</tspan></text>
-    <text id="Home" transform="translate(812 28)" fill="#fff" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="27">Home</tspan></text>
-    <text id="Menu" transform="translate(1045 55)" fill="#fff" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Menu</tspan></text>
-    <text id="Gallery" transform="translate(1157 55)" fill="#fff" font-size="25" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Gallery</tspan></text>
-  </g>
-</svg>
