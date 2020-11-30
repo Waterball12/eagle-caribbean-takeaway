@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1834.732" height="1655.257" viewBox="0 0 1834.732 1655.257">
+  <defs>
+    <filter id="Subtraction_4" x="1046.366" y="613.198" width="788.365" height="1031.258" filterUnits="userSpaceOnUse">
+      <feOffset dy="13" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17.5" result="blur"/>
+      <feFlood flood-opacity="0.059"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_298" x="151.546" y="365.091" width="1553.04" height="1205.926" filterUnits="userSpaceOnUse">
+      <feOffset dy="13" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17.5" result="blur-2"/>
+      <feFlood flood-opacity="0.059"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_297" x="0" y="0" width="1620.691" height="1655.257" filterUnits="userSpaceOnUse">
+      <feOffset dx="-37" dy="53" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="20.5" result="blur-3"/>
+      <feFlood flood-color="#53951f"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_46" data-name="Group 46" transform="translate(849.75 337.31)">
+    <g transform="matrix(1, 0, 0, 1, -849.75, -337.31)" filter="url(#Subtraction_4)">
+      <path id="Subtraction_4-2" data-name="Subtraction 4" d="M258.8,0V0C359.716,66.242,472.431,199.328,496.75,347.332c11.456,69.722,1.561,134.415-29.411,192.283a352.859,352.859,0,0,1-73.722,94.545c-27.8,25.322-60.189,46.91-96.276,64.164-65.769,31.445-142.359,48.067-221.491,48.067A532.639,532.639,0,0,1,0,741.033a327.784,327.784,0,0,0,37.6,40.844,255.251,255.251,0,0,0,41.932,31.205c30.328,17.871,61.913,26.932,93.876,26.932a171.367,171.367,0,0,0,27.205-2.194,183.475,183.475,0,0,0,27.7-6.758,451.238,451.238,0,0,0,79.1-34.892,484.412,484.412,0,0,0,78.724-54.716,444.972,444.972,0,0,0,69.534-74.5,408.444,408.444,0,0,0,28.566-44.662,392.191,392.191,0,0,0,22.963-49.6c28.822-75.806,33.4-159.381,13.614-248.4A511.439,511.439,0,0,0,503.258,263.3a481.075,481.075,0,0,0-23.66-55.121,462.674,462.674,0,0,0-28.884-49.266,452,452,0,0,0-33.226-43.424,439.784,439.784,0,0,0-75.954-69.365A411.7,411.7,0,0,0,258.8,0Z" transform="translate(1098.87 754.38) rotate(-11)" fill="#70bf34"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -849.75, -337.31)" filter="url(#Path_298)">
+      <path id="Path_298-2" data-name="Path 298" d="M121.9,209.6C-48.49,421.415-131.986,863.253-41,1108.951s321.28,296.119,526.846,83.444S897.178,629.577,803.588,246.476,292.295-2.214,121.9,209.6Z" transform="translate(329.96 1428.71) rotate(-99)" fill="#70bf34"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -849.75, -337.31)" filter="url(#Path_297)">
+      <path id="Path_297-2" data-name="Path 297" d="M49.15,1033.95c-181.82-71.766-114.784-418.775,37.283-660.124S502.357-47.305,743.186-61.988s537.624,275.531,276.138,642.6S230.97,1105.718,49.15,1033.95Z" transform="translate(611.64 1460.15) rotate(-114)" fill="#fff"/>
+    </g>
+    <text id="ABOUT_US" data-name="ABOUT US" transform="translate(82 613)" fill="#53951f" font-size="98" font-family="CenturyGothic-Bold, Century Gothic" font-weight="700" letter-spacing="-0.01em"><tspan x="0" y="0">ABOUT US</tspan></text>
+    <text id="Lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor" data-name="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor" transform="translate(82 665)" fill="#5b5b5b" font-size="27" font-family="SegoeUI-Semilight, Segoe UI" font-weight="300" letter-spacing="0.076em"><tspan x="0" y="29">Lorem ipsum dolor sit amet, consectetur </tspan><tspan x="0" y="71">adipiscing elit, sed do eiusmod tempor</tspan></text>
+  </g>
+</svg>

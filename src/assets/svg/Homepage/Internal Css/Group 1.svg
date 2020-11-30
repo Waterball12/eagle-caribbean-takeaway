@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="421" height="33" viewBox="0 0 421 33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 25px;
+        font-family: SegoeUI, Segoe UI;
+      }
+    </style>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-812 -28)">
+    <text id="About" class="cls-1" transform="translate(929 55)"><tspan x="0" y="0">About</tspan></text>
+    <text id="Home" class="cls-1" transform="translate(812 28)"><tspan x="0" y="27">Home</tspan></text>
+    <text id="Menu" class="cls-1" transform="translate(1045 55)"><tspan x="0" y="0">Menu</tspan></text>
+    <text id="Gallery" class="cls-1" transform="translate(1157 55)"><tspan x="0" y="0">Gallery</tspan></text>
+  </g>
+</svg>

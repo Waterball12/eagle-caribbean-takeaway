@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="573.982" height="43" viewBox="0 0 573.982 43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        fill: #6cdc21;
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <g id="Group_54" data-name="Group 54" transform="translate(-649.5 -2165)">
+    <line id="Line_4" data-name="Line 4" class="cls-1" x2="238.603" transform="translate(649.5 2190.863)"/>
+    <line id="Line_3" data-name="Line 3" class="cls-1" x2="238.603" transform="translate(984.879 2190.863)"/>
+    <path id="Polygon_2" data-name="Polygon 2" class="cls-2" d="M22.5,0l5.625,15.991L45,16.425,31.6,26.741,36.406,43,22.5,33.385,8.594,43l4.8-16.259L0,16.425l16.875-.433Z" transform="translate(914 2165)"/>
+  </g>
+</svg>
