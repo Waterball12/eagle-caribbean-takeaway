@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, {Suspense} from 'react';
 import CenterLoader from './components/Loader/CenterLoading';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";

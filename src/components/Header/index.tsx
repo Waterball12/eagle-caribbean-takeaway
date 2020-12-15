@@ -2,14 +2,14 @@ import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
-import {Link} from "react-router-dom";
 import IconButton from '@material-ui/core/IconButton';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import {AboutLink, HomeLink, MenuLink} from "../../shared/Links";
+import Logo from "../../assets/images/logo.png";
+import Image from "../Image";
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
@@ -44,9 +44,7 @@ const Header = () => {
                 <Toolbar className={classes.toolbar}>
                     <div>
                         <Hidden smDown>
-                            <Typography variant="h6" color="primary">
-                                <Link to="" className={classes.title}>Logo</Link>
-                            </Typography>
+                            <Image src={Logo} style={{height: '64px'}} />
                         </Hidden>
                     </div>
                     <div>

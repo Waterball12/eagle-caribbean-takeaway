@@ -1,28 +1,36 @@
 import React from 'react';
 import HeroImage from "../assets/svg/Menu/Presentation attributes/Group 35.svg";
-import Blob from "../assets/svg/Homepage/Presentation attributes/blob_big.svg";
 import clsx from "clsx";
 import Plate from "../assets/svg/Homepage/Presentation attributes/plate.svg";
 import {Box, Container, Grid, Typography} from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import {makeStyles} from "@material-ui/core/styles";
 import Image from "../components/Image";
-import Rectangle from "../assets/svg/Homepage/Presentation attributes/Rectangle 2.svg";
 import Footer from "../components/Footer";
+import CrossFire from "../assets/images/food-croos-fire.svg";
+import DishOne from "../assets/images/Dish1Small.png";
+import DishTwo from "../assets/images/Dish2FishSmall.png";
+import DishThree from "../assets/images/Dish3CarrotsSmall.png";
+import DishFour from "../assets/images/Dish4RiceSmall.png";
+import DishFive from "../assets/images/Dish5RiceAndsaladSmall.png";
+import DishSix from "../assets/images/Dish6avocadoSmall.png";
+import DishSeven from "../assets/images/Dish7Small.png";
+import DishEight from "../assets/images/Dish8homepage.png";
+import DishNine from "../assets/images/Dish9Small.png";
+import HeroHeader from "../assets/svg/About/Presentation attributes/Group 47.svg";
 
 const useStyles = makeStyles(theme => ({
     elm: {
         "backgroundRepeat": "no-repeat",
         "position": "absolute",
         "overflow": "hidden",
-        "top": '-65%',
+        "top": '-46%',
         "left": 0,
         "width": "100%",
         "height": "100%",
         backgroundSize: 'contain',
         "display": "flex !important",
-        "alignItems": "center !important",
-        transform: 'rotate(-25deg)'
+        "alignItems": "center !important"
     },
     root: {
         "display": "block",
@@ -65,7 +73,7 @@ const Menu = () => {
             <section className={classes.root}>
                 <div className={classes.elm}>
                     <figure className={classes.next}>
-                        <img style={{height: '1300px', width: '100%'}} src={Blob} alt="Blob" />
+                        <img style={{height: '500px', width: '100%'}} src={HeroHeader} alt="Blob" />
                     </figure>
                 </div>
                 <Container>
@@ -96,25 +104,12 @@ const Menu = () => {
             </section>
             <section>
                 <Container>
-                    <Grid container>
-                        <Grid item xs={12} lg={6}>
-                            <div>
-                                <Image style={{height: '600px', zIndex: -1, position: 'absolute'}} src={Rectangle} alt="rectangle" />
-                                <Image style={{marginTop: '7%'}} src={Plate} alt="plate" />
-                            </div>
-                        </Grid>
-                        <Grid item xs={12} lg={6}>
-                            <div style={{transform: 'rotate(180deg) scale(0.8)', marginTop: '25%'}}>
-                                <Image style={{height: '600px', zIndex: -1, position: 'absolute'}} src={Rectangle} alt="rectangle" />
-                                <Image style={{marginTop: '7%'}} src={Plate} alt="plate" />
-                            </div>
-                        </Grid>
-                    </Grid>
+                    <Image src={CrossFire} />
                 </Container>
             </section>
             <section className={clsx(classes.menuStory, classes.primaryBackground, classes.mainStory)}>
                 <Container>
-                    <Grid container>
+                    <Grid container spacing={4}>
                         <Grid item xs={12}>
                             <Box color="#fff" mt={10} mb={7} position="relative">
                                 <Typography variant="h4" align="center" color="inherit" gutterBottom>
@@ -128,7 +123,7 @@ const Menu = () => {
                             <Box>
                                 <Grid container>
                                     <Grid item xs={12} lg={4}>
-                                        <Image src={Plate} alt="Plate" />
+                                        <Image src={DishOne} alt="Plate" />
                                         <Typography variant="h6" align="center" color="inherit" gutterBottom>
                                             Dish name
                                         </Typography>
@@ -137,7 +132,7 @@ const Menu = () => {
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={12} lg={4}>
-                                        <Image src={Plate} alt="Plate" />
+                                        <Image src={DishTwo} alt="Plate" />
                                         <Typography variant="h6" align="center" color="inherit" gutterBottom>
                                             Dish name
                                         </Typography>
@@ -146,7 +141,7 @@ const Menu = () => {
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={12} lg={4}>
-                                        <Image src={Plate} alt="Plate" />
+                                        <Image src={DishThree} alt="Plate" />
                                         <Typography variant="h6" align="center" color="inherit" gutterBottom>
                                             Dish name
                                         </Typography>
@@ -163,31 +158,31 @@ const Menu = () => {
             <section className={classes.menuStory}>
                 <Container>
                     <Box pt="15%">
-                        <Grid container>
+                        <Grid container spacing={4}>
                             <Grid item xs={12} lg={4}>
-                                <Image src={Plate} alt="Plate" />
-                                <Typography variant="h6" align="center" color="inherit" gutterBottom>
+                                <Image src={DishFour} alt="Plate" />
+                                <Typography variant="h6" align="center" color="textSecondary" gutterBottom>
                                     Dish name
                                 </Typography>
-                                <Typography variant="h6" align="center" color="inherit">
+                                <Typography variant="h6" align="center" color="textSecondary">
                                     £5.99
                                 </Typography>
                             </Grid>
                             <Grid item xs={12} lg={4}>
-                                <Image src={Plate} alt="Plate" />
-                                <Typography variant="h6" align="center" color="inherit" gutterBottom>
+                                <Image src={DishFive} alt="Plate" />
+                                <Typography variant="h6" align="center" color="textSecondary" gutterBottom>
                                     Dish name
                                 </Typography>
-                                <Typography variant="h6" align="center" color="inherit">
+                                <Typography variant="h6" align="center" color="textSecondary">
                                     £5.99
                                 </Typography>
                             </Grid>
                             <Grid item xs={12} lg={4}>
-                                <Image src={Plate} alt="Plate" />
-                                <Typography variant="h6" align="center" color="inherit" gutterBottom>
+                                <Image src={DishSix} alt="Plate" />
+                                <Typography variant="h6" align="center" color="textSecondary" gutterBottom>
                                     Dish name
                                 </Typography>
-                                <Typography variant="h6" align="center" color="inherit">
+                                <Typography variant="h6" align="center" color="textSecondary">
                                     £5.99
                                 </Typography>
                             </Grid>
@@ -198,9 +193,9 @@ const Menu = () => {
             <section className={clsx(classes.menuStory, classes.primaryBackground, classes.lastStory)}>
                 <Container>
                     <Box pt="15%">
-                        <Grid container>
+                        <Grid container spacing={4}>
                             <Grid item xs={12} lg={4}>
-                                <Image src={Plate} alt="Plate" />
+                                <Image src={DishSeven} alt="Plate" />
                                 <Typography variant="h6" align="center" color="inherit" gutterBottom>
                                     Dish name
                                 </Typography>
@@ -209,7 +204,7 @@ const Menu = () => {
                                 </Typography>
                             </Grid>
                             <Grid item xs={12} lg={4}>
-                                <Image src={Plate} alt="Plate" />
+                                <Image src={DishEight} alt="Plate" />
                                 <Typography variant="h6" align="center" color="inherit" gutterBottom>
                                     Dish name
                                 </Typography>
@@ -218,7 +213,7 @@ const Menu = () => {
                                 </Typography>
                             </Grid>
                             <Grid item xs={12} lg={4}>
-                                <Image src={Plate} alt="Plate" />
+                                <Image src={DishNine} alt="Plate" />
                                 <Typography variant="h6" align="center" color="inherit" gutterBottom>
                                     Dish name
                                 </Typography>

@@ -3,10 +3,9 @@ import {Box, Container, Grid, Typography} from "@material-ui/core";
 import Image from "../components/Image";
 import {makeStyles} from "@material-ui/core/styles";
 import HeroHeader from "../assets/svg/About/Presentation attributes/Group 47.svg";
-import ManBlobAbout from "../assets/svg/About/Presentation attributes/Group 45.svg";
+import ManBlobAbout from "../assets/images/BuildingGraphicAboutUs.jpg";
 import ManBlobPresentation from "../assets/svg/About/Presentation attributes/Group 50.svg"
 import LadyBlobAbout from "../assets/svg/About/Presentation attributes/Group 49.svg";
-import AboutLines from "../assets/svg/About/Presentation attributes/Group 46.svg"
 import Divider from "../assets/svg/About/Presentation attributes/Group 54.svg"
 import FindUseImage from "../assets/svg/About/Presentation attributes/Group 52.svg"
 import GoogleMapsPlaceholder from "../assets/svg/About/Presentation attributes/Image 1.svg";
@@ -53,20 +52,16 @@ const About = () => {
                         <img style={{height: '500px', width: '100%'}} src={HeroHeader} alt="Blob" />
                     </figure>
                 </div>
-                <Container>
-                    <Box mt={10}>
-                        <Grid container spacing={3}>
-                            <Grid item lg={6} xl={6}>
-                                <Image src={AboutLines} alt="Hero image" />
-                            </Grid>
-                            <Grid item lg={6} xl={6}>
-                                <Image src={ManBlobAbout} alt="Hero image" />
-                            </Grid>
-                        </Grid>
-                    </Box>
-                </Container>
+                <Box>
+                    <div style={{width: '100%', height: '100%', position: 'absolute', top: '40%', left: '10%'}}>
+                        <Typography variant="h2" color="primary" style={{fontWeight: 700}}>
+                            ABOUT US
+                        </Typography>
+                    </div>
+                    <Image variant="square" src={ManBlobAbout} alt="Hero image" />
+                </Box>
             </section>
-            <section>
+            <section style={{marginTop: '24px'}}>
                 <Container>
                     <Grid container spacing={3} alignItems="center">
                         <Grid item xs={12} lg={6}>

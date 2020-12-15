@@ -12,7 +12,7 @@ export interface ImageProps {
     /**
      * Alt attribute of the image
      */
-    alt: string;
+    alt?: string;
     /**
      * Render inside the image
      */
