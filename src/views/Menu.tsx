@@ -1,7 +1,6 @@
 import React from 'react';
 import HeroImage from "../assets/svg/Menu/Presentation attributes/Group 35.svg";
 import clsx from "clsx";
-import Plate from "../assets/svg/Homepage/Presentation attributes/plate.svg";
 import {Box, Container, Grid, Typography} from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import {makeStyles} from "@material-ui/core/styles";
