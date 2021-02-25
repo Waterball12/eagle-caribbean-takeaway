@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     },
     toolbar: {
         justifyContent: 'space-between',
-        color: '#fff'
+        color: theme.palette.background.paper
     }
 }));
 
@@ -40,7 +40,7 @@ const Header = () => {
 
     return (
         <React.Fragment>
-            <AppBar position="absolute" color="transparent" elevation={0} className={classes.appBar}>
+            <AppBar position="static" elevation={1} className={classes.appBar}>
                 <Toolbar className={classes.toolbar}>
                     <div>
                         <Hidden smDown>
@@ -61,14 +61,7 @@ const Header = () => {
                             Gallery
                         </Button>
                     </div>
-                    <div>
-                        <IconButton aria-label="search" color="primary">
-                            <FacebookIcon />
-                        </IconButton>
-                        <IconButton aria-label="display more actions" edge="end" color="primary">
-                            <InstagramIcon />
-                        </IconButton>
-                    </div>
+                    <div />
                 </Toolbar>
             </AppBar>
         </React.Fragment>
