@@ -7,7 +7,7 @@ import Hidden from "@material-ui/core/Hidden";
 import IconButton from '@material-ui/core/IconButton';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import {AboutLink, HomeLink, MenuLink} from "../../shared/Links";
+import {AboutLink, GalleryLink, HomeLink, MenuLink} from "../../shared/Links";
 import Logo from "../../assets/images/logo.png";
 import Image from "../Image";
 
@@ -57,7 +57,7 @@ const Header = () => {
                         <Button className={classes.navigationButton} color="inherit" component={MenuLink}>
                             Menu
                         </Button>
-                        <Button className={classes.navigationButton} color="inherit">
+                        <Button className={classes.navigationButton} color="inherit" component={GalleryLink}>
                             Gallery
                         </Button>
                     </div>
