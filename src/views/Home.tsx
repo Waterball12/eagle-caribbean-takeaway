@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import DishOne from "../assets/images/Dish1Small.png";
 import DishTwo from "../assets/images/Dish3CarrotsSmall.png";
 import DishFour from "../assets/images/Dish5RiceAndsaladSmall.png";
-import DishPlate from "../assets/svg/Homepage/Presentation attributes/plate.svg";
+import DishPlate from "../assets/images/homepage_Banner.jpg";
 import CategoryCard from "../components/Card/CategoryCard";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import {SocialLink, SocialProvider} from '@mui-treasury/components/socialLink'
