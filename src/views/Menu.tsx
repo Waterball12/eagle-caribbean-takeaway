@@ -1,12 +1,11 @@
 import React from 'react';
 import HeroImage from "../assets/svg/Menu/Presentation attributes/Group 35.svg";
 import clsx from "clsx";
-import {Box, Container, Grid, Typography} from "@material-ui/core";
+import {Box, Container, Grid, Theme, Typography} from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import {makeStyles} from "@material-ui/core/styles";
 import Image from "../components/Image";
 import Footer from "../components/Footer";
-import CrossFire from "../assets/images/food-croos-fire.svg";
 import DishOne from "../assets/images/Dish1Small.png";
 import DishTwo from "../assets/images/Dish2FishSmall.png";
 import DishThree from "../assets/images/Dish3CarrotsSmall.png";
@@ -16,7 +15,7 @@ import DishSix from "../assets/images/Dish6avocadoSmall.png";
 import DishSeven from "../assets/images/Dish7Small.png";
 import DishEight from "../assets/images/Dish8homepage.png";
 import DishNine from "../assets/images/Dish9Small.png";
-import HeroHeader from "../assets/svg/About/Presentation attributes/Group 47.svg";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const useStyles = makeStyles(theme => ({
     elm: {
@@ -58,53 +57,62 @@ const useStyles = makeStyles(theme => ({
     mainStory: {
         marginTop: '48px'
     },
-    lastStory: {
-        marginBottom: '68px'
+    heroHeadingContainer: {
+        padding: `${theme.spacing(3)}px ${theme.spacing(2)}px`
+    },
+    heroSection: {
+        padding: `${theme.spacing(1)}px`,
+        [theme.breakpoints.up('md')]: {
+            paddingTop: '40px',
+            padding: '96px 64px',
+            margin: "0 auto",
+            maxWidth: '1236px',
+            overflow: 'hidden'
+        }
     }
 }))
 
 const Menu = () => {
 
     const classes = useStyles();
+    const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
 
     return (
         <React.Fragment>
-            <section className={classes.root}>
-                <div className={classes.elm}>
-                    <figure className={classes.next}>
-                        <img style={{height: '500px', width: '100%'}} src={HeroHeader} alt="Blob" />
-                    </figure>
-                </div>
-                <Container>
-                    <Box mt={10}>
-                        <Grid container spacing={3}>
-                            <Grid item lg={5} xl={6}>
-                                <div style={{zIndex: 5, color: '#000000', marginTop: '28px'}}>
-                                    <Typography variant="h1" color="primary" gutterBottom>
+            <section className={classes.heroSection}>
+                <div>
+                    <Grid container spacing={2} direction={isMobile ? "column-reverse" : undefined}>
+                        <Grid item xs={12} md={6}>
+                            <Grid container spacing={2} className={classes.heroHeadingContainer}>
+                                <Grid item xs={12}>
+                                    <Typography variant="subtitle1" color="primary" style={{fontWeight: 'bold'}}>
                                         Menu
                                     </Typography>
-                                    <Typography variant="subtitle1" color="inherit">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing, Lorem ipsum dolor sit amet, consectetur adipiscing,
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Typography variant="h3" color="textPrimary" style={{fontWeight: 'bold'}}>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing
                                     </Typography>
-                                    <Box mt={3}>
-                                        <Button variant="contained" color="primary">
-                                            Go to full menu
-                                        </Button>
-                                    </Box>
-                                </div>
-                            </Grid>
-                            <Grid item lg={7} xl={6}>
-                                <Image src={HeroImage} alt="Hero image" />
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Typography variant="caption" color="textSecondary">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Button color="primary" variant="contained" size="large">
+                                        Go to full menu
+                                    </Button>
+                                </Grid>
                             </Grid>
                         </Grid>
-                    </Box>
-                </Container>
-            </section>
-            <section>
-                <Container>
-                    <Image src={CrossFire} />
-                </Container>
+                        <Grid item xs={12} md={6}>
+                            <Image src={HeroImage} alt="Hero image" />
+                        </Grid>
+                    </Grid>
+                </div>
             </section>
             <section className={clsx(classes.menuStory, classes.primaryBackground, classes.mainStory)}>
                 <Container>
@@ -189,7 +197,7 @@ const Menu = () => {
                     </Box>
                 </Container>
             </section>
-            <section className={clsx(classes.menuStory, classes.primaryBackground, classes.lastStory)}>
+            <section className={clsx(classes.menuStory, classes.primaryBackground)}>
                 <Container>
                     <Box pt="15%">
                         <Grid container spacing={4}>

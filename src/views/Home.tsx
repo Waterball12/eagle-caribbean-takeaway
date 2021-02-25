@@ -11,8 +11,8 @@ import DishFour from "../assets/images/Dish5RiceAndsaladSmall.png";
 import DishPlate from "../assets/svg/Homepage/Presentation attributes/plate.svg";
 import CategoryCard from "../components/Card/CategoryCard";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { SocialProvider, SocialLink } from '@mui-treasury/components/socialLink'
-import { useBallSocialLinkStyles } from '@mui-treasury/styles/socialLink/ball';
+import {SocialLink, SocialProvider} from '@mui-treasury/components/socialLink'
+import {useBallSocialLinkStyles} from '@mui-treasury/styles/socialLink/ball';
 import DishCard from "../components/Card/DishCard";
 
 

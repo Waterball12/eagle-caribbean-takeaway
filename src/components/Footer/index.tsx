@@ -29,7 +29,7 @@ const Footer = () => {
     const classes = useStyles();
 
     return (
-        <footer style={{width: '100%', padding: '20px 0'}}>
+        <footer style={{width: '100%', padding: '20px 0',backgroundColor: 'rgba(0,0,0,.04)'}}>
             <Container style={{marginBottom: '50px'}}>
                 <Grid container spacing={4} justify="center" alignItems="center">
                     <Grid item xs={12} md={4} lg={4}>
