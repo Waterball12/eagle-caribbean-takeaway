@@ -2,6 +2,11 @@ html {
     height: 100%;
     overflow: visible;
     overflow-y: scroll;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
 }
 body {
     min-height: 100%;
@@ -26,3 +31,11 @@ svg {
     overflow: hidden;
     vertical-align: middle;
 }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+strong, b {
+    font-weight: 700;
+}
+
