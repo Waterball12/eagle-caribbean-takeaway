@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {createMuiTheme, ThemeProvider} from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import {green, yellow} from "@material-ui/core/colors";
 
 export interface DarkProps {
     isDark: boolean;
@@ -53,8 +54,11 @@ const MaterialTheme: React.FC = ({children}) => {
                 palette: {
                     type: isDark ? 'dark' : 'light',
                     primary: {
-                        main: "#6BDB20",
+                        main: green[400],
                         contrastText: "#fff"
+                    },
+                    secondary: {
+                        main: yellow[400]
                     }
                 },
                 shape: {
