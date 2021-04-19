@@ -3,6 +3,14 @@ import {Box, Container, Grid, Typography} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
 import DishCard from "../components/Card/DishCard";
 import DishOne from "../assets/images/Dish1Small.png";
+import DishTwo from "../assets/images/Dish2FishSmall.png";
+import DishThree from "../assets/images/Dish3CarrotsSmall.png";
+import DishFour from "../assets/images/Dish4RiceSmall.png";
+import DishFive from "../assets/images/Dish5RiceAndsaladSmall.png";
+import DishSix from "../assets/images/Dish6avocadoSmall.png";
+import DishSeven from "../assets/images/Dish7Small.png";
+import DishEight from "../assets/images/Dish8homepage.png";
+import DishNine from "../assets/images/Dish9Small.png";
 import {SocialLink, SocialProvider} from "@mui-treasury/components/socialLink";
 import {useBallSocialLinkStyles} from "@mui-treasury/styles/socialLink/ball";
 
@@ -26,6 +34,22 @@ const useStyles = makeStyles(theme => ({
         }
     }
 }))
+
+export interface GalleryElement {
+    src: any;
+}
+
+const images: GalleryElement[] = [
+    {src: DishOne},
+    {src: DishTwo},
+    {src: DishThree},
+    {src: DishFour},
+    {src: DishFive},
+    {src: DishSix},
+    {src: DishSeven},
+    {src: DishEight},
+    {src: DishNine}
+]
 
 const Gallery = () => {
     const classes = useStyles();
@@ -60,42 +84,11 @@ const Gallery = () => {
             <section className={classes.gallerySection}>
                 <Container>
                     <Grid container spacing={3}>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <DishCard image={DishOne} body="" heading="" overline="" />
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <DishCard image={DishOne} body="" heading="" overline="" />
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <DishCard image={DishOne} body="" heading="" overline="" />
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <DishCard image={DishOne} body="" heading="" overline="" />
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <DishCard image={DishOne} body="" heading="" overline="" />
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <DishCard image={DishOne} body="" heading="" overline="" />
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <DishCard image={DishOne} body="" heading="" overline="" />
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <DishCard image={DishOne} body="" heading="" overline="" />
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <DishCard image={DishOne} body="" heading="" overline="" />
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <DishCard image={DishOne} body="" heading="" overline="" />
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <DishCard image={DishOne} body="" heading="" overline="" />
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <DishCard image={DishOne} body="" heading="" overline="" />
-                        </Grid>
+                        {images.map((i, key) => (
+                            <Grid item xs={12} sm={6} md={4}>
+                                <DishCard image={i.src} body="" heading="" overline="" />
+                            </Grid>
+                        ))}
                     </Grid>
                 </Container>
             </section>

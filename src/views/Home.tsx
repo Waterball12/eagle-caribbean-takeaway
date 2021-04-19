@@ -14,7 +14,18 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import {SocialLink, SocialProvider} from '@mui-treasury/components/socialLink'
 import {useBallSocialLinkStyles} from '@mui-treasury/styles/socialLink/ball';
 import DishCard from "../components/Card/DishCard";
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+
+// Import Swiper styles
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
+
+// install Swiper modules
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const useStyles = makeStyles(theme => ({
     heroHeadingContainer: {
@@ -82,7 +93,16 @@ const Home = () => {
                             </Grid>
                         </Grid>
                         <Grid item xs={12} md={6}>
-                            <Image src={DishPlate} />
+                            <Swiper
+                                spaceBetween={50}
+                                slidesPerView={1}
+                                navigation
+                                onSlideChange={() => console.log('slide change')}
+                            >
+                                <SwiperSlide><Image src={DishPlate} /></SwiperSlide>
+                                <SwiperSlide><Image src={DishPlate} /></SwiperSlide>
+                                <SwiperSlide><Image src={DishPlate} /></SwiperSlide>
+                            </Swiper>
                         </Grid>
                     </Grid>
                 </div>
