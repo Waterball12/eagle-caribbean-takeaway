@@ -7,6 +7,7 @@ import Hidden from "@material-ui/core/Hidden";
 import {AboutLink, GalleryLink, HomeLink, MenuLink} from "../../shared/Links";
 import Logo from "../../assets/images/logo.png";
 import Image from "../Image";
+import {Container} from "@material-ui/core";
 // import {useDarkContext} from "../../assets/theme/MaterialTheme";
 
 const useStyles = makeStyles((theme) => ({
@@ -45,32 +46,35 @@ const Header = () => {
     return (
         <React.Fragment>
             <AppBar position="static" elevation={1} className={classes.appBar}>
-                <Toolbar className={classes.toolbar}>
-                    <div>
-                        <Hidden smDown>
-                            <Image src={Logo} style={{height: '64px'}} />
-                        </Hidden>
-                    </div>
-                    <div>
-                        <Button className={classes.navigationButton} color="inherit" component={HomeLink}>
-                            Home
-                        </Button>
-                        <Button className={classes.navigationButton} color="inherit" component={AboutLink}>
-                            About
-                        </Button>
-                        <Button className={classes.navigationButton} color="inherit" component={MenuLink}>
-                            Menu
-                        </Button>
-                        <Button className={classes.navigationButton} color="inherit" component={GalleryLink}>
-                            Gallery
-                        </Button>
-                    </div>
-                    <div>
-                        {/*<Button className={classes.navigationButton} color="inherit" onClick={handleDarkThemeToggle}>*/}
-                        {/*    Gallery*/}
-                        {/*</Button>*/}
-                    </div>
-                </Toolbar>
+                <Container>
+                    <Toolbar disableGutters className={classes.toolbar}>
+                        <div>
+                            <Hidden smDown>
+                                <Image src={Logo} style={{height: '54px'}} />
+                            </Hidden>
+                        </div>
+                        <div>
+                            <Button className={classes.navigationButton} color="inherit" component={HomeLink}>
+                                Home
+                            </Button>
+                            <Button className={classes.navigationButton} color="inherit" component={AboutLink}>
+                                About
+                            </Button>
+                            <Button className={classes.navigationButton} color="inherit" component={MenuLink}>
+                                Menu
+                            </Button>
+                            <Button className={classes.navigationButton} color="inherit" component={GalleryLink}>
+                                Gallery
+                            </Button>
+                        </div>
+                        <div>
+                            {/*<Button className={classes.navigationButton} color="inherit" onClick={handleDarkThemeToggle}>*/}
+                            {/*    Gallery*/}
+                            {/*</Button>*/}
+                        </div>
+                    </Toolbar>
+                </Container>
+
             </AppBar>
         </React.Fragment>
     );
