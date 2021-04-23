@@ -124,7 +124,27 @@ const Home = () => {
                             <CategoryCard title="Mains" icon={<AddAPhotoIcon color="action" />} />
                         </Grid>
                         <Grid item xs={6} md={2}>
+                            <CategoryCard title="Mini meals" icon={<AddAPhotoIcon color="action" />} />
+                        </Grid>
+                        <Grid item xs={6} md={2}>
+                            <CategoryCard title="Side orders" icon={<AddAPhotoIcon color="action" />} />
+                        </Grid>
+                        <Grid item xs={6} md={2}>
                             <CategoryCard title="Fish Dishes" icon={<AddAPhotoIcon color="action" />} />
+                        </Grid>
+                        <Grid item xs={6} md={2}>
+                            <CategoryCard title="Soup" icon={<AddAPhotoIcon color="action" />} />
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={2}>
+                        <Grid item xs={6} md={2}>
+                            <CategoryCard title="Extras" icon={<AddAPhotoIcon color="action" />} />
+                        </Grid>
+                        <Grid item xs={6} md={2}>
+                            <CategoryCard title="Patties" icon={<AddAPhotoIcon color="action" />} />
+                        </Grid>
+                        <Grid item xs={6} md={2}>
+                            <CategoryCard title="Porridge" icon={<AddAPhotoIcon color="action" />} />
                         </Grid>
                         <Grid item xs={6} md={2}>
                             <CategoryCard title="Vegetarian" icon={<AddAPhotoIcon color="action" />} />
@@ -133,7 +153,7 @@ const Home = () => {
                             <CategoryCard title="Desserts" icon={<AddAPhotoIcon color="action" />} />
                         </Grid>
                         <Grid item xs={6} md={2}>
-                            <CategoryCard title="Soup" icon={<AddAPhotoIcon color="action" />} />
+                            <CategoryCard title="Drinks" icon={<AddAPhotoIcon color="action" />} />
                         </Grid>
                     </Grid>
                 </Container>
