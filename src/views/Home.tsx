@@ -1,5 +1,17 @@
-import React from 'react';
-import {Box, Container, Grid, Theme, Typography} from "@material-ui/core";
+import React, {useState} from 'react';
+import {
+    Box,
+    Container,
+    Dialog,
+    DialogActions,
+    DialogContent,
+    DialogTitle,
+    Grid,
+    SvgIcon,
+    Theme,
+    Typography
+} from "@material-ui/core";
+import Icon from '@material-ui/core/Icon';
 import {makeStyles} from "@material-ui/core/styles";
 import Image from "../components/Image";
 import AddAPhotoIcon from '@material-ui/icons/AddAPhoto';
@@ -16,13 +28,14 @@ import {useBallSocialLinkStyles} from '@mui-treasury/styles/socialLink/ball';
 import DishCard from "../components/Card/DishCard";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-
+import Breakfast from "../assets/categories/breakfast.svg";
+import Desserts from "../assets/categories/breakfast.svg";
 // Import Swiper styles
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
+import dishIcons, {DishCategories} from "../shared/DishCategories";
 
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
@@ -48,6 +61,8 @@ const useStyles = makeStyles(theme => ({
 
 const Home = () => {
     const classes = useStyles();
+    const [menu, setMenu] = useState<DishCategories | null>(null);
+
 
     const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
 
@@ -117,46 +132,34 @@ const Home = () => {
                         </Grid>
                     </Box>
                     <Grid container spacing={2}>
-                        <Grid item xs={6} md={2}>
-                            <CategoryCard title="Breakfast" icon={<AddAPhotoIcon color="action" />} />
-                        </Grid>
-                        <Grid item xs={6} md={2}>
-                            <CategoryCard title="Mains" icon={<AddAPhotoIcon color="action" />} />
-                        </Grid>
-                        <Grid item xs={6} md={2}>
-                            <CategoryCard title="Mini meals" icon={<AddAPhotoIcon color="action" />} />
-                        </Grid>
-                        <Grid item xs={6} md={2}>
-                            <CategoryCard title="Side orders" icon={<AddAPhotoIcon color="action" />} />
-                        </Grid>
-                        <Grid item xs={6} md={2}>
-                            <CategoryCard title="Fish Dishes" icon={<AddAPhotoIcon color="action" />} />
-                        </Grid>
-                        <Grid item xs={6} md={2}>
-                            <CategoryCard title="Soup" icon={<AddAPhotoIcon color="action" />} />
-                        </Grid>
+                        {dishIcons.slice(0, 6).map(category => (
+                            <Grid item xs={6} md={2}>
+                                <CategoryCard onClick={() => setMenu(category)} title={category.name} icon={<Image src={category.icon} />} />
+                            </Grid>
+                        ))}
                     </Grid>
                     <Grid container spacing={2}>
-                        <Grid item xs={6} md={2}>
-                            <CategoryCard title="Extras" icon={<AddAPhotoIcon color="action" />} />
-                        </Grid>
-                        <Grid item xs={6} md={2}>
-                            <CategoryCard title="Patties" icon={<AddAPhotoIcon color="action" />} />
-                        </Grid>
-                        <Grid item xs={6} md={2}>
-                            <CategoryCard title="Porridge" icon={<AddAPhotoIcon color="action" />} />
-                        </Grid>
-                        <Grid item xs={6} md={2}>
-                            <CategoryCard title="Vegetarian" icon={<AddAPhotoIcon color="action" />} />
-                        </Grid>
-                        <Grid item xs={6} md={2}>
-                            <CategoryCard title="Desserts" icon={<AddAPhotoIcon color="action" />} />
-                        </Grid>
-                        <Grid item xs={6} md={2}>
-                            <CategoryCard title="Drinks" icon={<AddAPhotoIcon color="action" />} />
-                        </Grid>
+                        {dishIcons.slice(6, 12).map(category => (
+                            <Grid item xs={6} md={2}>
+                                <CategoryCard onClick={() => setMenu(category)} title={category.name} icon={<Image src={category.icon} />} />
+                            </Grid>
+                        ))}
                     </Grid>
                 </Container>
+                <Dialog open={Boolean(menu)} onClose={() => setMenu(null)} fullScreen={isMobile}>
+                    <DialogContent>
+                        <Box py={4}>
+                            <Image variant="square" src={menu?.menu} />
+                        </Box>
+                    </DialogContent>
+                    {isMobile && (
+                        <DialogActions>
+                            <Button variant="outlined" fullWidth onClick={() => setMenu(null)} >
+                                Nice!
+                            </Button>
+                        </DialogActions>
+                    )}
+                </Dialog>
             </section>
             <section style={{backgroundColor: 'rgb(39 176 40 / 15%)', width: '100%', height: '100%', position: 'relative', marginTop: '36px'}}>
                 <Container>

@@ -5,6 +5,7 @@ import {makeStyles} from "@material-ui/core/styles";
 export interface CategoryCardProps {
     title: string;
     icon: React.ReactNode;
+    onClick?: () => void;
 }
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -36,6 +37,12 @@ const useStyles = makeStyles((theme: Theme) => ({
             height: '60px',
             objectFit: 'contain',
             marginBottom: `${theme.spacing(5)}px`
+        },
+        "&>img": {
+            width: '60px',
+            height: '60px',
+            objectFit: 'contain',
+            marginBottom: `${theme.spacing(5)}px`
         }
     }
 }))
@@ -45,11 +52,12 @@ const CategoryCard = (props: CategoryCardProps) => {
 
     const {
         title,
-        icon
+        icon,
+        onClick
     } = props;
 
     return (
-        <Paper className={classes.card}>
+        <Paper className={classes.card} onClick={onClick}>
             <CardContent className={classes.content}>
                 <Box display="flex" flexWrap="wrap">
                     <Grid item xs={12} className={classes.iconContainer}>
