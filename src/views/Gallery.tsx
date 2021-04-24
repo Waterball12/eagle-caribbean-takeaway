@@ -11,6 +11,11 @@ import DishSix from "../assets/images/Dish6avocadoSmall.png";
 import DishSeven from "../assets/images/Dish7Small.png";
 import DishEight from "../assets/images/Dish8homepage.png";
 import DishNine from "../assets/images/Dish9Small.png";
+import CarOne from "../assets/images/car1.jpg";
+import CarTwo from "../assets/images/car2.jpg";
+import P3 from "../assets/images/P3.jpg";
+import P6 from "../assets/images/P6.jpg";
+import Sauces from "../assets/images/sauces.jpg";
 import {SocialLink, SocialProvider} from "@mui-treasury/components/socialLink";
 import {useBallSocialLinkStyles} from "@mui-treasury/styles/socialLink/ball";
 
@@ -48,7 +53,12 @@ const images: GalleryElement[] = [
     {src: DishSix},
     {src: DishSeven},
     {src: DishEight},
-    {src: DishNine}
+    {src: DishNine},
+    {src: CarOne},
+    {src: CarTwo},
+    {src: P3},
+    {src: P6},
+    {src: Sauces},
 ]
 
 const Gallery = () => {
