@@ -1,4 +1,3 @@
-import React from "react";
 import Breakfast from "../assets/categories/breakfast.svg";
 import BreakfastMenu from "../assets/categories/breakfast.png";
 import Desserts from "../assets/categories/desserts.svg";

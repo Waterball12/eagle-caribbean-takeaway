@@ -1,20 +1,7 @@
 import React, {useState} from 'react';
-import {
-    Box,
-    Container,
-    Dialog,
-    DialogActions,
-    DialogContent,
-    DialogTitle,
-    Grid,
-    SvgIcon,
-    Theme,
-    Typography
-} from "@material-ui/core";
-import Icon from '@material-ui/core/Icon';
+import {Box, Container, Dialog, DialogActions, DialogContent, Grid, Theme, Typography} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
 import Image from "../components/Image";
-import AddAPhotoIcon from '@material-ui/icons/AddAPhoto';
 import Button from "@material-ui/core/Button";
 import Footer from "../components/Footer";
 import DishOne from "../assets/images/Dish1Small.png";
@@ -26,10 +13,8 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import {SocialLink, SocialProvider} from '@mui-treasury/components/socialLink'
 import {useBallSocialLinkStyles} from '@mui-treasury/styles/socialLink/ball';
 import DishCard from "../components/Card/DishCard";
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Breakfast from "../assets/categories/breakfast.svg";
-import Desserts from "../assets/categories/breakfast.svg";
+import SwiperCore, {A11y, Navigation, Pagination, Scrollbar} from 'swiper';
+import {Swiper, SwiperSlide} from 'swiper/react';
 // Import Swiper styles
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
