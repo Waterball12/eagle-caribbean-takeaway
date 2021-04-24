@@ -21,7 +21,7 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 import dishIcons, {DishCategories} from "../shared/DishCategories";
-
+import LinearImage from "../assets/images/lineart_background_2.jpg";
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -146,7 +146,7 @@ const Home = () => {
                     )}
                 </Dialog>
             </section>
-            <section style={{backgroundColor: 'rgb(39 176 40 / 15%)', width: '100%', height: '100%', position: 'relative', marginTop: '36px'}}>
+            <section style={{backgroundImage: `url(${LinearImage})`, width: '100%', height: '100%', position: 'relative', marginTop: '36px'}}>
                 <Container>
                     <Grid container spacing={4}>
                         <Grid item xs={12} sm={12} md={6}>
