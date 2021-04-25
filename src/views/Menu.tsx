@@ -15,6 +15,7 @@ import DishSix from "../assets/images/Dish6avocadoSmall.png";
 import DishSeven from "../assets/images/Dish7Small.png";
 import DishEight from "../assets/images/Dish8homepage.png";
 import DishNine from "../assets/images/Dish9Small.png";
+import FullMenu from "../assets/images/Menu_full.png";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const useStyles = makeStyles(theme => ({
@@ -229,6 +230,16 @@ const Menu = () => {
                                 </Typography>
                             </Grid>
                         </Grid>
+                    </Box>
+                </Container>
+            </section>
+            <section className={classes.menuStory}>
+                <Container>
+                    <Box py={3} textAlign="center">
+                        <Typography variant="h3" align="center" color="textSecondary" gutterBottom>
+                            Full menu
+                        </Typography>
+                        <Image src={FullMenu} />
                     </Box>
                 </Container>
             </section>
