@@ -8,6 +8,8 @@ import DishOne from "../assets/images/Dish1Small.png";
 import DishTwo from "../assets/images/Dish3CarrotsSmall.png";
 import DishFour from "../assets/images/Dish5RiceAndsaladSmall.png";
 import DishPlate from "../assets/images/homepage_Banner.jpg";
+import DishPlate2 from "../assets/images/homepage_Banner_2.jpg";
+import DishPlate3 from "../assets/images/homepage_Banner_3.jpg";
 import CategoryCard from "../components/Card/CategoryCard";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import {SocialLink, SocialProvider} from '@mui-treasury/components/socialLink'
@@ -100,8 +102,8 @@ const Home = () => {
                                 onSlideChange={() => console.log('slide change')}
                             >
                                 <SwiperSlide><Image src={DishPlate} /></SwiperSlide>
-                                <SwiperSlide><Image src={DishPlate} /></SwiperSlide>
-                                <SwiperSlide><Image src={DishPlate} /></SwiperSlide>
+                                <SwiperSlide><Image src={DishPlate2} /></SwiperSlide>
+                                <SwiperSlide><Image src={DishPlate3} /></SwiperSlide>
                             </Swiper>
                         </Grid>
                     </Grid>
