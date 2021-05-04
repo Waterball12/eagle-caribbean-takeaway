@@ -1,7 +1,6 @@
 import Home from "../views/Home";
 import About from "../views/About";
 import Menu from "../views/Menu";
-import Gallery from "../views/Gallery";
 
 const routes = [
     {
@@ -15,10 +14,6 @@ const routes = [
     {
         path: "/menu",
         component: Menu
-    },
-    {
-        path: "/gallery",
-        component: Gallery
     }
 ]
 

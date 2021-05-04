@@ -4,10 +4,11 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
-import {AboutLink, GalleryLink, HomeLink, MenuLink} from "../../shared/Links";
-import Logo from "../../assets/images/logo.png";
+import {AboutLink, HomeLink, MenuLink} from "../../shared/Links";
+//import Logo from "../../assets/images/logo.png";
 import Image from "../Image";
 import {Container} from "@material-ui/core";
+import AnotherLogo from "../../assets/images/eagle_logo_animation_transparent_colour_small.gif";
 // import {useDarkContext} from "../../assets/theme/MaterialTheme";
 
 const useStyles = makeStyles((theme) => ({
@@ -50,7 +51,7 @@ const Header = () => {
                     <Toolbar disableGutters className={classes.toolbar}>
                         <div>
                             <Hidden smDown>
-                                <Image src={Logo} style={{height: '54px'}} />
+                                <Image src={AnotherLogo} style={{height: '54px'}} />
                             </Hidden>
                         </div>
                         <div>
@@ -62,9 +63,6 @@ const Header = () => {
                             </Button>
                             <Button className={classes.navigationButton} color="inherit" component={MenuLink}>
                                 Menu
-                            </Button>
-                            <Button className={classes.navigationButton} color="inherit" component={GalleryLink}>
-                                Gallery
                             </Button>
                         </div>
                         <div>

@@ -4,8 +4,6 @@ import {makeStyles} from "@material-ui/core/styles";
 import Image from "../components/Image";
 import Button from "@material-ui/core/Button";
 import Footer from "../components/Footer";
-import DishOne from "../assets/images/Dish1Small.png";
-import DishTwo from "../assets/images/Dish3CarrotsSmall.png";
 import DishFour from "../assets/images/Dish5RiceAndsaladSmall.png";
 import DishPlate from "../assets/images/homepage_Banner.jpg";
 import DishPlate2 from "../assets/images/homepage_Banner_2.jpg";
@@ -14,7 +12,6 @@ import CategoryCard from "../components/Card/CategoryCard";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import {SocialLink, SocialProvider} from '@mui-treasury/components/socialLink'
 import {useBallSocialLinkStyles} from '@mui-treasury/styles/socialLink/ball';
-import DishCard from "../components/Card/DishCard";
 import SwiperCore, {A11y, Navigation, Pagination, Scrollbar} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
 // Import Swiper styles
@@ -24,6 +21,7 @@ import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 import dishIcons, {DishCategories} from "../shared/DishCategories";
 import LinearImage from "../assets/images/lineart_background_2.jpg";
+import TestimonialCard from "../components/TestimonialCard";
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -58,7 +56,7 @@ const Home = () => {
             <section className={classes.heroSection}>
                 <div>
                     <Grid container spacing={2} direction={isMobile ? "column-reverse" : undefined}>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={4}>
                             <Grid container spacing={2} className={classes.heroHeadingContainer}>
                                 <Grid item xs={12}>
                                     <Typography variant="subtitle1" color="primary" >
@@ -66,15 +64,14 @@ const Home = () => {
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Typography variant="h3" color="textPrimary" style={{fontWeight: 'bold'}}>
-                                        Caribbean food like never before.
+                                    <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}}>
+                                        Welcome to the Eagle Caribbean Take Away
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Typography variant="caption" color="textSecondary">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                        The heart of real traditional Caribbean food within the West Midlands where good food warms the heart and feeds the soul.
+                                        Transforming the freshest ingredients into a simply mouth watering dining experience.
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
@@ -94,7 +91,7 @@ const Home = () => {
 
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={8}>
                             <Swiper
                                 spaceBetween={50}
                                 slidesPerView={1}
@@ -189,35 +186,32 @@ const Home = () => {
                 <Container>
                     <Box textAlign="center">
                         <Typography variant="subtitle1" color="primary" >
-                            Features
+                            TESTIMONIALS
                         </Typography>
                         <Typography variant="h3" color="textPrimary" style={{fontWeight: 'bold'}}>
-                            Our best dishes
+                            Our customers
                         </Typography>
                     </Box>
                     <Grid container spacing={2} className={classes.heroHeadingContainer}>
                         <Grid item xs={12} md={4}>
-                            <DishCard
-                                body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                                heading="Curry"
-                                image={DishOne}
-                                overline="Lorem Ipsum"
+                            <TestimonialCard
+                                rating={5}
+                                body="Having read reviews we thought we'd give this a go today. Well, all the reviews are correct we can't wait to go again! The food was divine and the owners are so friendly. Both had the medium sized tray and that was a plentiful amount. I had curried chicken, rice & veg my husband had curried goat. A massive round of applause to the owners 👋👋"
+                                author="Alison B"
                             />
                         </Grid>
                         <Grid item xs={12} md={4}>
-                            <DishCard
-                                body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                                heading="Carrots with meat"
-                                image={DishTwo}
-                                overline="Lorem Ipsum"
+                            <TestimonialCard
+                                rating={5}
+                                body="Ordered Jerk Chicken/Curried Goat/Oxtail/Rice and Peas/Fried Chicken/Fried Dumplings/Mac & Cheese(I was hungry and the variety of Jamaican food on offer is amazing). Every morsel of every item purchased was fantastic! Full of flavour! Freshly cooked and large portion sizes; excellent value for money! I will definetely be going back even if it is nearly a two hour drive away! What's distance when it comes to excellent food!"
+                                author="Linda B"
                             />
                         </Grid>
                         <Grid item xs={12} md={4}>
-                            <DishCard
-                                body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                                heading="Rice and something"
-                                image={DishFour}
-                                overline="Lorem Ipsum"
+                            <TestimonialCard
+                                rating={5}
+                                body="Gorgeous food. The chicken literally fell off the bone and was juicy. The rice was cooked to perfection. Full of flavour and absolutely adored it. Cannot wait to eat from here again <3"
+                                author="Anna L"
                             />
                         </Grid>
                     </Grid>

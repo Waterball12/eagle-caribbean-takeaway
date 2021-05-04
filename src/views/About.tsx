@@ -110,7 +110,7 @@ const About = () => {
             <section className={classes.heroSection}>
                 <div>
                     <Grid container spacing={2} direction={isMobile ? "column-reverse" : undefined}>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={4}>
                             <Grid container spacing={2} className={classes.heroHeadingContainer}>
                                 <Grid item xs={12}>
                                     <Typography variant="subtitle1" color="primary" >
@@ -118,7 +118,7 @@ const About = () => {
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Typography variant="h3" color="textPrimary" style={{fontWeight: 'bold'}}>
+                                    <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}}>
                                         Eagle caribbean and english takeaway
                                     </Typography>
                                 </Grid>
@@ -136,7 +136,7 @@ const About = () => {
                                 </Grid>
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={8}>
                             <Image src={ShopOutsideImage} />
                         </Grid>
                     </Grid>

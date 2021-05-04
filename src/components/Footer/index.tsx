@@ -111,9 +111,9 @@ const Footer = () => {
                     </Grid>
                     <Grid item>
                         <Image
-                            src="https://lh3.googleusercontent.com/proxy/MDEJrwyfBZiTEawlEZc2OVqG5F33Ny7Fh202xcjAtaBqzA0fjIE3if6bO1NN5Zz8O-nHiogw_JEqznEoQU3JcFNvlZFfBiyORvKPPxeDta6gJ_OCg4puLOWgWavwbpfo_C8"
+                            src="https://www.just-eat.co.uk/CmsAssets/media/Images/Blogs/UK/2019/05/Our-Brand/icon-just-eat.jpg"
                             alt="Just eat"
-                            style={{height: '48px', width: '68px'}}
+                            style={{height: '48px'}}
                         />
                     </Grid>
                 </Grid>
