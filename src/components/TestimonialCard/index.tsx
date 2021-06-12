@@ -3,7 +3,6 @@ import {Box, Paper, Typography} from "@material-ui/core";
 import CardContent from "@material-ui/core/CardContent";
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import {Rating} from "@material-ui/lab";
-import {makeStyles} from "@material-ui/core/styles";
 
 export interface TestimonialCardProps {
     rating: number;
