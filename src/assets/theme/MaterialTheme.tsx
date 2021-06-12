@@ -48,6 +48,8 @@ const MaterialTheme: React.FC = ({children}) => {
         setTheme: setIsDark
     } as DarkProps;
 
+    // TODO finish the theme
+
     const theme = React.useMemo(
         () =>
             createMuiTheme({

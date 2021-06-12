@@ -3,6 +3,7 @@ import routes from "../routes";
 import {Route, Switch} from 'react-router-dom';
 import Header from "../components/Header";
 import Error404 from "../views/Error";
+import Footer from "../components/Footer";
 
 const components = (
     <Switch>
@@ -22,6 +23,7 @@ const Basic = () => {
         <React.Fragment>
             <Header />
             {components}
+            <Footer />
         </React.Fragment>
     );
 };

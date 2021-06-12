@@ -4,7 +4,6 @@ import Image from "../components/Image";
 import {makeStyles} from "@material-ui/core/styles";
 import ManBlobPresentation from "../assets/svg/About/Presentation attributes/Group 50.svg"
 import LadyBlobAbout from "../assets/svg/About/Presentation attributes/Group 49.svg";
-import Footer from "../components/Footer";
 import Button from "@material-ui/core/Button";
 import ShopOutsideImage from "../assets/images/eagle_outside.jpg";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
@@ -47,11 +46,6 @@ const useStyles = makeStyles((theme: Theme) => ({
         [theme.breakpoints.down('sm')]: {
             width: '100%'
         }
-    },
-    mapFrameContainer: {
-        width: '100%',
-        height: '100%',
-        overflow: 'hidden'
     },
     mapShape: {
         left: '0%',
@@ -96,7 +90,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         },
         [theme.breakpoints.up('md')]: {
             padding: '96px 64px'
-        },
+        }
     }
 }))
 
@@ -142,7 +136,7 @@ const About = () => {
                     </Grid>
                 </div>
             </section>
-            <section style={{width: '100%', height: '100%', position: 'relative'}}>
+            <Box width="100%" height="100%" position="relative">
                 <Container>
                     <Grid container spacing={4}>
                         <Grid item xs={12} sm={12} md={6}>
@@ -180,8 +174,8 @@ const About = () => {
                         </Grid>
                     </Grid>
                 </Container>
-            </section>
-            <section style={{width: '100%', height: '100%', position: 'relative'}}>
+            </Box>
+            <Box width="100%" height="100%" position="relative">
                 <Container>
                     <Grid container spacing={4}>
                         <Grid item xs={12} sm={12} md={6}>
@@ -219,8 +213,8 @@ const About = () => {
                         </Grid>
                     </Grid>
                 </Container>
-            </section>
-            <section style={{backgroundColor: 'rgb(39 176 40 / 15%)',width: '100%', height: '100%', position: 'relative', marginTop: '36px'}}>
+            </Box>
+            <Box bgcolor="rgb(39 176 40 / 15%)" width="100%" height="100%" position="relative" mt={4}>
                 <Container>
                     <Box textAlign="center" pb={5} pt={5}>
                         <Typography variant="subtitle1" color="primary" style={{fontWeight: 'bold'}}>
@@ -287,9 +281,9 @@ const About = () => {
                         </Grid>
                     </Box>
                 </Container>
-            </section>
-            <section style={{width: '100%', height: '100%', position: 'relative', overflow: 'hidden'}}>
-                <div style={{width: '100%', height: '100%', overflow: 'hidden'}}>
+            </Box>
+            <Box component="section" width="100%" height="100%" position="relative" overflow="hidden">
+                <Box width="100%" height="100%" overflow="hidden">
                     <div className={classes.mapSection}>
                         <section className={classes.mapInfo}>
                             <Grid container spacing={1}>
@@ -317,7 +311,7 @@ const About = () => {
                         </section>
                         <div className={classes.mapContainer}>
                             <div className={classes.mapCover}>
-                                <div className={classes.mapFrameContainer}>
+                                <Box width="100%" height="100%" overflow="hidden">
                                     <div className={classes.mapShape}>
                                         <iframe
                                             title="map"
@@ -329,13 +323,13 @@ const About = () => {
                                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.7887877704825!2d-1.9946781840467935!3d52.5191613440435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDMxJzA5LjAiTiAxwrA1OSczMy4wIlc!5e0!3m2!1sen!2suk!4v1614251881327!5m2!1sen!2suk"
                                         />
                                     </div>
-                                </div>
+                                </Box>
                             </div>
                         </div>
                     </div>
-                </div>
+                </Box>
                 <Divider variant="fullWidth" />
-            </section>
+            </Box>
             <section className={classes.menuSection}>
                 <Container>
                     <Grid container spacing={2} justify="center">
@@ -359,7 +353,6 @@ const About = () => {
                     </Grid>
                 </Container>
             </section>
-            <Footer />
         </React.Fragment>
     );
 };

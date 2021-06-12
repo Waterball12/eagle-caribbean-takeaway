@@ -3,7 +3,6 @@ import {Box, Container, Dialog, DialogActions, DialogContent, Grid, Theme, Typog
 import {makeStyles} from "@material-ui/core/styles";
 import Image from "../components/Image";
 import Button from "@material-ui/core/Button";
-import Footer from "../components/Footer";
 import DishFour from "../assets/images/Dish5RiceAndsaladSmall.png";
 import DishPlate from "../assets/images/homepage_Banner.jpg";
 import DishPlate2 from "../assets/images/homepage_Banner_2.jpg";
@@ -96,7 +95,6 @@ const Home = () => {
                                 spaceBetween={50}
                                 slidesPerView={1}
                                 navigation
-                                onSlideChange={() => console.log('slide change')}
                             >
                                 <SwiperSlide><Image src={DishPlate} /></SwiperSlide>
                                 <SwiperSlide><Image src={DishPlate2} /></SwiperSlide>
@@ -106,7 +104,7 @@ const Home = () => {
                     </Grid>
                 </div>
             </section>
-            <section style={{width: '100%', height: '100%', position: 'relative'}}>
+            <Box component="section" width="100%" height="100%" position="relative">
                 <Container>
                     <Box mb={3}>
                         <Grid container spacing={2}>
@@ -144,7 +142,7 @@ const Home = () => {
                         </DialogActions>
                     )}
                 </Dialog>
-            </section>
+            </Box>
             <section style={{backgroundImage: `url(${LinearImage})`, width: '100%', height: '100%', position: 'relative', marginTop: '36px'}}>
                 <Container>
                     <Grid container spacing={4}>
@@ -217,7 +215,6 @@ const Home = () => {
                     </Grid>
                 </Container>
             </section>
-            <Footer />
         </React.Fragment>
     );
 };
