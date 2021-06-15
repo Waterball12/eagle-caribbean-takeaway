@@ -54,7 +54,7 @@ const Footer = () => {
                                         <WorkIcon />
                                     </Avatar>
                                 </ListItemAvatar>
-                                <ListItemText primary="Photographers" secondary="John Doe, Jane Doe" />
+                                <ListItemText primary="Photographers" secondary="Sandwell College photographers" />
                             </ListItem>
                         </List>
                     </Grid>
@@ -71,7 +71,7 @@ const Footer = () => {
                                         <WorkIcon />
                                     </Avatar>
                                 </ListItemAvatar>
-                                <ListItemText primary="202-255-0186"/>
+                                <ListItemText primary="0121-565-1093"/>
                             </ListItem>
                             <ListItem>
                                 <ListItemAvatar>
@@ -79,7 +79,7 @@ const Footer = () => {
                                         <WorkIcon />
                                     </Avatar>
                                 </ListItemAvatar>
-                                <ListItemText primary="75 Bootham Crescent"/>
+                                <ListItemText primary="63 CHURCH ROAD"/>
                             </ListItem>
                             <ListItem>
                                 <ListItemAvatar>
@@ -87,7 +87,7 @@ const Footer = () => {
                                         <WorkIcon />
                                     </Avatar>
                                 </ListItemAvatar>
-                                <ListItemText primary="eagles@gmail.com"/>
+                                <ListItemText primary="eaglescaribbeantakeaway@gmail.com"/>
                             </ListItem>
                         </List>
                     </Grid>
@@ -98,15 +98,15 @@ const Footer = () => {
                 <Grid container justify="space-between" alignItems="center" style={{marginTop: '16px', marginBottom: '8px'}}>
                     <Grid item>
                         <IconButton aria-label="search" color="primary">
-                            <FacebookIcon />
+                            <FacebookIcon href="https://en-gb.facebook.com/pages/category/Jamaican-Restaurant/Eagles-Caribbean-Take-Away-1222285761241079/" target="_blank" />
                         </IconButton>
                         <IconButton aria-label="display more actions" edge="end" color="primary">
-                            <InstagramIcon />
+                            <InstagramIcon href="https://www.instagram.com/english_takeaways/" target="_blank" />
                         </IconButton>
                     </Grid>
                     <Grid item>
                         <Typography variant="body2" color="textSecondary">
-                            COPYRIGHT 2020 Eagles Caribbean & English Take-Away
+                            COPYRIGHT 2021 Eagles Caribbean & English Take-Away
                         </Typography>
                     </Grid>
                     <Grid item>

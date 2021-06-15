@@ -63,12 +63,12 @@ const Home = () => {
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}}>
+                                    <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}} component="h1">
                                         Welcome to the Eagle Caribbean Take Away
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Typography variant="caption" color="textSecondary">
+                                    <Typography variant="body1" color="textSecondary">
                                         The heart of real traditional Caribbean food within the West Midlands where good food warms the heart and feeds the soul.
                                         Transforming the freshest ingredients into a simply mouth watering dining experience.
                                     </Typography>
@@ -82,8 +82,8 @@ const Home = () => {
                                     <Box mt={1}>
                                         {/*@ts-ignore*/}
                                         <SocialProvider useStyles={useBallSocialLinkStyles}>
-                                            <SocialLink brand={'Facebook'}  />
-                                            <SocialLink brand={'Twitter'} />
+                                            <SocialLink brand={'Facebook'} href="https://en-gb.facebook.com/pages/category/Jamaican-Restaurant/Eagles-Caribbean-Take-Away-1222285761241079/"  />
+                                            <SocialLink brand={'Instagram'} href="https://www.instagram.com/english_takeaways/"  />
                                         </SocialProvider>
                                     </Box>
                                 </Grid>
