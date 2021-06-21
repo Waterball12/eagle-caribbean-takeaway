@@ -95,6 +95,7 @@ const Home = () => {
                                 spaceBetween={50}
                                 slidesPerView={1}
                                 navigation
+                                autoplay
                             >
                                 <SwiperSlide><Image src={DishPlate} /></SwiperSlide>
                                 <SwiperSlide><Image src={DishPlate2} /></SwiperSlide>
