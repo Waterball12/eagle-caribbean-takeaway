@@ -22,7 +22,7 @@ import dishIcons, {DishCategories} from "../shared/DishCategories";
 import LinearImage from "../assets/images/lineart_background_2.jpg";
 import TestimonialCard from "../components/TestimonialCard";
 import ShopOutsideImage from "../assets/images/eagle_outside.jpg";
-import {MenuLink, AboutLink} from "../shared/Links";
+import {AboutLink, MenuLink} from "../shared/Links";
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
