@@ -21,6 +21,8 @@ import 'swiper/components/scrollbar/scrollbar.scss';
 import dishIcons, {DishCategories} from "../shared/DishCategories";
 import LinearImage from "../assets/images/lineart_background_2.jpg";
 import TestimonialCard from "../components/TestimonialCard";
+import ShopOutsideImage from "../assets/images/eagle_outside.jpg";
+import {MenuLink, AboutLink} from "../shared/Links";
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -74,7 +76,7 @@ const Home = () => {
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Button color="primary" variant="contained" size="large">
+                                    <Button color="primary" variant="contained" size="large" component={MenuLink}>
                                         View menu
                                     </Button>
                                 </Grid>
@@ -100,6 +102,7 @@ const Home = () => {
                                 <SwiperSlide><Image src={DishPlate} /></SwiperSlide>
                                 <SwiperSlide><Image src={DishPlate2} /></SwiperSlide>
                                 <SwiperSlide><Image src={DishPlate3} /></SwiperSlide>
+                                <SwiperSlide><Image src={ShopOutsideImage} /></SwiperSlide>
                             </Swiper>
                         </Grid>
                     </Grid>
@@ -168,7 +171,7 @@ const Home = () => {
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Box mt={4}>
-                                        <Button color="primary" variant="contained" size="large">
+                                        <Button color="primary" variant="contained" size="large" component={AboutLink}>
                                             Explore our story
                                         </Button>
                                     </Box>

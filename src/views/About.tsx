@@ -11,6 +11,12 @@ import NavigationToImage from "../assets/images/undraw_Navigation_re_wxx4.svg";
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
 import Divider from "@material-ui/core/Divider";
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableRow from '@material-ui/core/TableRow';
+import {MenuLink} from "../shared/Links";
 
 const useStyles = makeStyles((theme: Theme) => ({
     heroSection: {
@@ -124,8 +130,8 @@ const About = () => {
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Button color="primary" variant="contained" size="large">
-                                        See the chiefs
+                                    <Button color="primary" variant="contained" size="large" href="#chefs">
+                                        See the chefs
                                     </Button>
                                 </Grid>
                             </Grid>
@@ -145,13 +151,13 @@ const About = () => {
                         <Grid item xs={12} sm={12} md={6}>
                             <Grid container spacing={2} className={classes.heroHeadingContainer}>
                                 <Grid item xs={12}>
-                                    <Typography variant="subtitle1" color="primary" >
+                                    <Typography variant="subtitle1" color="primary" id="chefs">
                                         Jane Doe
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}}>
-                                        Get to know how the manager
+                                        Get to know the manager
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
@@ -187,7 +193,7 @@ const About = () => {
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}}>
-                                        Get to know how the chief
+                                        Get to know the chef
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
@@ -233,17 +239,17 @@ const About = () => {
                                 <Grid container spacing={2}>
                                     <Grid item xs={12}>
                                         <Typography variant="h6" color="textSecondary">
-                                            75 Bootham Crescent
+                                            63 CHURCH ROAD
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Typography variant="h6" color="textSecondary">
-                                            RINGSHALL
+                                            SMETHWICK
                                         </Typography>
                                     </Grid>
                                     <Grid item xs={12}>
                                         <Typography variant="h6" color="textSecondary">
-                                            IP14 4NW
+                                            B67 6HA
                                         </Typography>
                                     </Grid>
                                 </Grid>
@@ -256,7 +262,7 @@ const About = () => {
                                                 <PhoneIcon color="primary" />
                                             </ListItemIcon>
                                             <ListItemText
-                                                primary="202-2555-0186"
+                                                primary="0121-565-1093"
                                                 primaryTypographyProps={{
                                                     variant: "h6",
                                                     color: "textSecondary"
@@ -268,7 +274,7 @@ const About = () => {
                                                 <EmailIcon color="primary" />
                                             </ListItemIcon>
                                             <ListItemText
-                                                primary="eagles@gmail.com"
+                                                primary="eaglescaribbeantakeaway@gmail.com"
                                                 primaryTypographyProps={{
                                                     variant: "h6",
                                                     color: "textSecondary"
@@ -291,19 +297,45 @@ const About = () => {
                                     <Grid container spacing={2}>
                                         <Grid item xs={12}>
                                             <Typography variant="subtitle1" color="primary" style={{fontWeight: 'bold'}}>
-                                                Maps
+                                                Maps & Time
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={12}>
                                             <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}}>
-                                                Lorem Ipsum is simply dummy text
+                                                Opening hours
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Typography variant="h6" color="textSecondary">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                            </Typography>
+                                            <TableContainer>
+                                                <Table>
+                                                    <TableBody>
+                                                        <TableRow>
+                                                            <TableCell>
+                                                                Monday to Friday
+                                                            </TableCell>
+                                                            <TableCell>
+                                                                8AM-9PM
+                                                            </TableCell>
+                                                        </TableRow>
+                                                        <TableRow>
+                                                            <TableCell>
+                                                                Saturday
+                                                            </TableCell>
+                                                            <TableCell>
+                                                                8AM-9PM
+                                                            </TableCell>
+                                                        </TableRow>
+                                                        <TableRow>
+                                                            <TableCell>
+                                                                Sunday
+                                                            </TableCell>
+                                                            <TableCell>
+                                                                Closed
+                                                            </TableCell>
+                                                        </TableRow>
+                                                    </TableBody>
+                                                </Table>
+                                            </TableContainer>
                                         </Grid>
                                     </Grid>
                                 </Grid>
@@ -314,13 +346,13 @@ const About = () => {
                                 <Box width="100%" height="100%" overflow="hidden">
                                     <div className={classes.mapShape}>
                                         <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.650308434639!2d-1.9719873841938116!3d52.48546697980768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd6564d777e9%3A0x6549df04cd00057d!2s63%20Church%20Rd%2C%20Smethwick%20B67%206HA!5e0!3m2!1sen!2suk!4v1624352550347!5m2!1sen!2suk"
                                             title="map"
                                             width="100%"
                                             height="100%"
                                             frameBorder="0"
                                             loading="lazy"
                                             style={{border:0}}
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.7887877704825!2d-1.9946781840467935!3d52.5191613440435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDMxJzA5LjAiTiAxwrA1OSczMy4wIlc!5e0!3m2!1sen!2suk!4v1614251881327!5m2!1sen!2suk"
                                         />
                                     </div>
                                 </Box>
@@ -340,12 +372,12 @@ const About = () => {
                         </Grid>
                         <Grid item xs={12}>
                             <Typography variant="h6" color="textSecondary" align="center">
-                                We have over X dishes, ready for you
+                                We have mounth watering dishes ready for you
                             </Typography>
                         </Grid>
                         <Grid item xs={12}>
                             <Box textAlign="center">
-                                <Button color="primary" variant="contained">
+                                <Button color="primary" variant="contained" component={MenuLink}>
                                     View menu
                                 </Button>
                             </Box>

@@ -17,6 +17,11 @@ import IconButton from "@material-ui/core/IconButton";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import {makeStyles} from "@material-ui/core/styles";
+import CodeIcon from '@material-ui/icons/Code';
+import CameraAltIcon from '@material-ui/icons/CameraAlt';
+import LocationCityIcon from '@material-ui/icons/LocationCity';
+import PhoneIcon from '@material-ui/icons/Phone';
+import EmailIcon from '@material-ui/icons/Email';
 
 const useStyles = makeStyles((theme) => ({
     contactAvatar: {
@@ -43,7 +48,7 @@ const Footer = () => {
                             <ListItem>
                                 <ListItemAvatar>
                                     <Avatar>
-                                        <WorkIcon />
+                                        <CodeIcon />
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText primary="Designers & Developers" secondary="Jasraj Singh, Satbir Singh" />
@@ -51,7 +56,7 @@ const Footer = () => {
                             <ListItem>
                                 <ListItemAvatar>
                                     <Avatar>
-                                        <WorkIcon />
+                                        <CameraAltIcon />
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText primary="Photographers" secondary="Sandwell College photographers" />
@@ -68,7 +73,7 @@ const Footer = () => {
                             <ListItem>
                                 <ListItemAvatar>
                                     <Avatar className={classes.contactAvatar}>
-                                        <WorkIcon />
+                                        <PhoneIcon />
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText primary="0121-565-1093"/>
@@ -76,7 +81,7 @@ const Footer = () => {
                             <ListItem>
                                 <ListItemAvatar>
                                     <Avatar className={classes.contactAvatar}>
-                                        <WorkIcon />
+                                        <LocationCityIcon />
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText primary="63 CHURCH ROAD"/>
@@ -84,7 +89,7 @@ const Footer = () => {
                             <ListItem>
                                 <ListItemAvatar>
                                     <Avatar className={classes.contactAvatar}>
-                                        <WorkIcon />
+                                        <EmailIcon />
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText primary="eaglescaribbeantakeaway@gmail.com"/>

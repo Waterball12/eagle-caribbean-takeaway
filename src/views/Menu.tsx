@@ -8,6 +8,8 @@ import DishThree from "../assets/images/Dish3CarrotsSmall.png";
 import DishFour from "../assets/images/Dish4RiceSmall.png";
 import DishFive from "../assets/images/Dish5RiceAndsaladSmall.png";
 import DishSix from "../assets/images/Dish6avocadoSmall.png";
+import DishSeven from "../assets/images/Dish7Small.png";
+import DishEight from "../assets/images/Dish8homepage.png";
 import FullMenu from "../assets/images/Menu_full.png";
 import DishCard from "../components/Card/DishCard";
 
@@ -80,6 +82,32 @@ const Menu = () => {
                                 body=""
                                 heading="Green yellow white"
                                 image={DishFive}
+                                overline=""
+                            />
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={2} className={classes.heroHeadingContainer}>
+                        <Grid item xs={12} md={4}>
+                            <DishCard
+                                body=""
+                                heading="Carrots with meat"
+                                image={DishSix}
+                                overline=""
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <DishCard
+                                body=""
+                                heading="Meat maybe?"
+                                image={DishSeven}
+                                overline=""
+                            />
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <DishCard
+                                body=""
+                                heading="Green yellow white"
+                                image={DishEight}
                                 overline=""
                             />
                         </Grid>
