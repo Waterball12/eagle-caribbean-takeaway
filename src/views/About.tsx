@@ -119,19 +119,20 @@ const About = () => {
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}}>
-                                        Eagle caribbean and english takeaway
+                                        Eagle's Caribbean and English Takeaway
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Typography variant="caption" color="textSecondary">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                    <Typography variant="body1" color="textSecondary">
+                                        Eagle’s Caribbean and English Takeaway was first established in July 2018 where we began to build a great customer base.
+                                        Being situated in Smethwick Birmingham means we are close in proximity to a number of towns and cities surrounding Birmingham.
+                                        Available on JUST EAT and UBEREAT we also offer a collection and delivery service. With a 4 star rating from the food standard
+                                        agency our food is prepared to the highest of standards.
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Button color="primary" variant="contained" size="large" href="#chefs">
-                                        See the chefs
+                                        Meet the managers
                                     </Button>
                                 </Grid>
                             </Grid>
@@ -151,30 +152,17 @@ const About = () => {
                         <Grid item xs={12} sm={12} md={6}>
                             <Grid container spacing={2} className={classes.heroHeadingContainer}>
                                 <Grid item xs={12}>
-                                    <Typography variant="subtitle1" color="primary" id="chefs">
-                                        Jane Doe
-                                    </Typography>
-                                </Grid>
-                                <Grid item xs={12}>
                                     <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}}>
-                                        Get to know the manager
+                                        Faith Donalds
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Typography variant="caption" color="textSecondary">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                    <Typography variant="body1" color="textSecondary">
+                                        Faith has been the jubilant and pleasurable manageress representing the business for a number of years.
+                                        She shares a passion for exploring exotic foods and incorporates her own culture into the
+                                        flavourful dishes produced in the kitchen. She represents both Caribbean and English cultures
+                                        with pride and also caters for weddings, parties and family functions.
                                     </Typography>
-                                </Grid>
-                                <Grid item xs={12}>
-                                    <Box mt={4}>
-                                        <Button color="primary" variant="contained" size="large">
-                                            Explore our story
-                                        </Button>
-                                    </Box>
                                 </Grid>
                             </Grid>
                         </Grid>
@@ -187,30 +175,18 @@ const About = () => {
                         <Grid item xs={12} sm={12} md={6}>
                             <Grid container spacing={2} className={classes.heroHeadingContainer}>
                                 <Grid item xs={12}>
-                                    <Typography variant="subtitle1" color="primary" >
-                                        John Doe
-                                    </Typography>
-                                </Grid>
-                                <Grid item xs={12}>
                                     <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}}>
-                                        Get to know the chef
+                                        Eric Thompson
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Typography variant="caption" color="textSecondary">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                    <Typography variant="body1" color="textSecondary">
+                                        Eric has been the master behind creating the most delicious delicacies we offer here at Eagle's
+                                        Caribbean and English Takeaway. With over 30 years’ experience from around the globe bringing both
+                                        Caribbean and English dishes together in one place. Eric's experience includes cooking at
+                                        various Carnivals and festivals including Jamaica's renown Independence celebration in St.
+                                        Paul's Square, Birmingham.
                                     </Typography>
-                                </Grid>
-                                <Grid item xs={12}>
-                                    <Box mt={4}>
-                                        <Button color="primary" variant="contained" size="large">
-                                            Explore our story
-                                        </Button>
-                                    </Box>
                                 </Grid>
                             </Grid>
                         </Grid>

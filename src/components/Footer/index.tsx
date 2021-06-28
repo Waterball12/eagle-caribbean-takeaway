@@ -21,6 +21,7 @@ import CameraAltIcon from '@material-ui/icons/CameraAlt';
 import LocationCityIcon from '@material-ui/icons/LocationCity';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
+import { Link } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     contactAvatar: {
@@ -114,11 +115,17 @@ const Footer = () => {
                         </Typography>
                     </Grid>
                     <Grid item>
-                        <Image
-                            src="https://www.just-eat.co.uk/CmsAssets/media/Images/Blogs/UK/2019/05/Our-Brand/icon-just-eat.jpg"
-                            alt="Just eat"
-                            style={{height: '48px'}}
-                        />
+                        <Link
+                            href="https://www.just-eat.co.uk/restaurants-eagles-caribbean-and-english-takeaway-smethwick/menu"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                src="https://www.just-eat.co.uk/CmsAssets/media/Images/Blogs/UK/2019/05/Our-Brand/icon-just-eat.jpg"
+                                alt="Just eat"
+                                style={{height: '48px'}}
+                            />
+                        </Link>
                     </Grid>
                 </Grid>
             </Container>

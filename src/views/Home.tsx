@@ -9,7 +9,7 @@ import DishPlate2 from "../assets/images/homepage_Banner_2.jpg";
 import DishPlate3 from "../assets/images/homepage_Banner_3.jpg";
 import CategoryCard from "../components/Card/CategoryCard";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import {SocialLink, SocialProvider} from '@mui-treasury/components/socialLink'
+import {SocialLink, SocialProvider} from '@mui-treasury/components/socialLink';
 import {useBallSocialLinkStyles} from '@mui-treasury/styles/socialLink/ball';
 import SwiperCore, {A11y, Navigation, Pagination, Scrollbar, Autoplay} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
@@ -66,7 +66,7 @@ const Home = () => {
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Typography variant="h4" color="textPrimary" style={{fontWeight: 'bold'}} component="h1">
-                                        Welcome to the Eagle Caribbean Take Away
+                                        Welcome to the Eagle's Caribbean Take Away
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
@@ -163,10 +163,10 @@ const Home = () => {
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <Typography variant="caption" color="textSecondary">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                    <Typography variant="body1" color="textSecondary">
+                                        Daydreaming about being on white sandy beaches lying in the sun. Eagles Caribbean and English Takeaway can bring a
+                                        taste of the Caribbean to your door this evening, so look at the menu and order using the JUST EAT app and let Eagles
+                                        Caribbean and English Takeaway bring the sunshine to your door in the shape of Caribbean food.
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
