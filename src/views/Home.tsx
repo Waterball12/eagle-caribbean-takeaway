@@ -11,7 +11,7 @@ import CategoryCard from "../components/Card/CategoryCard";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import {SocialLink, SocialProvider} from '@mui-treasury/components/socialLink'
 import {useBallSocialLinkStyles} from '@mui-treasury/styles/socialLink/ball';
-import SwiperCore, {A11y, Navigation, Pagination, Scrollbar} from 'swiper';
+import SwiperCore, {A11y, Navigation, Pagination, Scrollbar, Autoplay} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
 // Import Swiper styles
 import 'swiper/swiper.scss';
@@ -24,7 +24,7 @@ import TestimonialCard from "../components/TestimonialCard";
 import ShopOutsideImage from "../assets/images/eagle_outside.jpg";
 import {AboutLink, MenuLink} from "../shared/Links";
 // install Swiper modules
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 const useStyles = makeStyles(theme => ({
     heroHeadingContainer: {
