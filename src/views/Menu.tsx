@@ -11,6 +11,7 @@ import DishSix from "../assets/images/Dish6avocadoSmall.png";
 import DishSeven from "../assets/images/Dish7Small.png";
 import DishEight from "../assets/images/Dish8homepage.png";
 import FullMenu from "../assets/images/Menu_full.png";
+import DishNine from "../assets/images/Dish9Small.png";
 import DishCard from "../components/Card/DishCard";
 
 const useStyles = makeStyles(theme => ({
@@ -38,7 +39,7 @@ const Menu = () => {
                         <Grid item xs={12} md={4}>
                             <DishCard
                                 body=""
-                                heading="Curry"
+                                heading="Curry goat, white rice with steam veg"
                                 image={DishOne}
                                 overline=""
                             />
@@ -46,7 +47,7 @@ const Menu = () => {
                         <Grid item xs={12} md={4}>
                             <DishCard
                                 body=""
-                                heading="Fish"
+                                heading="Steam fish with steam veg"
                                 image={DishTwo}
                                 overline=""
                             />
@@ -54,7 +55,7 @@ const Menu = () => {
                         <Grid item xs={12} md={4}>
                             <DishCard
                                 body=""
-                                heading="Rice and something"
+                                heading="Rice and peas, fry chicken with veg"
                                 image={DishFour}
                                 overline=""
                             />
@@ -64,15 +65,15 @@ const Menu = () => {
                         <Grid item xs={12} md={4}>
                             <DishCard
                                 body=""
-                                heading="Carrots with meat"
-                                image={DishThree}
+                                heading="Macaroni and cheese"
+                                image={DishNine}
                                 overline=""
                             />
                         </Grid>
                         <Grid item xs={12} md={4}>
                             <DishCard
                                 body=""
-                                heading="Meat maybe?"
+                                heading="Steam fish with hard food"
                                 image={DishSix}
                                 overline=""
                             />
@@ -80,7 +81,7 @@ const Menu = () => {
                         <Grid item xs={12} md={4}>
                             <DishCard
                                 body=""
-                                heading="Green yellow white"
+                                heading="Aubergine + sweet potato curry"
                                 image={DishFive}
                                 overline=""
                             />
@@ -90,15 +91,15 @@ const Menu = () => {
                         <Grid item xs={12} md={4}>
                             <DishCard
                                 body=""
-                                heading="Carrots with meat"
-                                image={DishSix}
+                                heading="Fried fish"
+                                image={DishThree}
                                 overline=""
                             />
                         </Grid>
                         <Grid item xs={12} md={4}>
                             <DishCard
                                 body=""
-                                heading="Meat maybe?"
+                                heading="BBQ Wings"
                                 image={DishSeven}
                                 overline=""
                             />
@@ -106,7 +107,7 @@ const Menu = () => {
                         <Grid item xs={12} md={4}>
                             <DishCard
                                 body=""
-                                heading="Green yellow white"
+                                heading="Stuff dumplings"
                                 image={DishEight}
                                 overline=""
                             />
