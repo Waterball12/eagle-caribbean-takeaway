@@ -8,6 +8,7 @@ import {AboutLink, HomeLink, MenuLink} from "../../shared/Links";
 //import Logo from "../../assets/images/logo.png";
 import Image from "../Image";
 import {Container} from "@material-ui/core";
+import {Link} from "react-router-dom";
 import AnotherLogo from "../../assets/images/eagle_logo_animation_transparent_colour_small.gif";
 // import {useDarkContext} from "../../assets/theme/MaterialTheme";
 
@@ -51,7 +52,9 @@ const Header = () => {
                     <Toolbar disableGutters className={classes.toolbar}>
                         <div>
                             <Hidden smDown>
-                                <Image src={AnotherLogo} style={{height: '54px'}} />
+                                <Link to="/">
+                                    <Image src={AnotherLogo} style={{height: '54px'}} />
+                                </Link>
                             </Hidden>
                         </div>
                         <div>
