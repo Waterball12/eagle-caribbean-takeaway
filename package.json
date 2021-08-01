@@ -16,7 +16,7 @@
     "@types/jest": "^26.0.23",
     "@types/node": "^12.20.15",
     "@types/react": "^17.0.11",
-    "@types/react-dom": "^17.0.7",
+    "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.7",
     "@types/reveal": "^3.3.33",
     "classnames": "^2.3.1",
